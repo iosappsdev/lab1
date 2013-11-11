@@ -8,27 +8,25 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
-@end
-
 @implementation ViewController
 @synthesize mylabel, myTextField, nameVariable, messageVariable;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (IBAction)changeGreeting:(id)sender {
     
+    //Triggers our "makeItSo" method to execute
     [self makeItSo];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
     [self makeItSo];
+    //Triggers our "makeItSo" method to execute
     [textField resignFirstResponder];
     return YES;
 }
@@ -38,12 +36,13 @@
     //Sets our nameVariable equal to our textField's text input.
     nameVariable = myTextField.text;
     
+    //Checking if user entered any text in the textbox
     if (nameVariable.length == 0) {
         
-        //Message Builder
+        //Default Message
         messageVariable = @"I'm Sorry Dave, I can't do that...";
         
-        //Sets myLabel equal to our nameVariable
+        //Sets myLabel "equal" to our nameVariable
         mylabel.text = messageVariable;
 
     } else {
