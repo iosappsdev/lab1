@@ -30,7 +30,7 @@ Lab 1 | My First App
 ==========
 
 <h4><strong>Goal:</strong></h4> Create a app that gets “text” from User via 
-<strong>UITextField</strong> and updates a <strong>UILabel</strong> to display text and  must also dismiss the <strong>Keyboard</strong>.
+<strong>UITextField</strong> and updates a <strong>UILabel</strong> to display text and  must also dismiss the <strong>Keyboard</strong>
 when user does one of the following actions:
 
 - Taps the “Return” key
