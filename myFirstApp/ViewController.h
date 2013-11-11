@@ -15,15 +15,20 @@
 
 //Textfield
 @property (nonatomic,strong)IBOutlet UITextField *myTextField;
+
 //Label
 @property (nonatomic,strong)IBOutlet UILabel *mylabel;
+
 //Text Variable
 @property (nonatomic,strong)NSString *nameVariable;
+
 //Message Variable
 @property (nonatomic,strong)NSString *messageVariable;
+
 //Button Action
 -(IBAction)changeGreeting:(id)sender;
 
+//Program Logic
 -(void)makeItSo;
 
 @end
