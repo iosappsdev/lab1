@@ -28,8 +28,8 @@
 }
 
 // This is the action or "IBAction" (IB stands for "Interface
-// Builder", so think Interface Builder Action that is triggered
-// when our button is clicked.
+// Builder", triggered when our button is clicked and the code inside
+// the opening and closing Curly Brace "{ }" is executed.
 - (IBAction)changeGreeting:(id)sender {
     
     // Triggers our "makeItSo" method to execute
