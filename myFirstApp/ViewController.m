@@ -16,7 +16,7 @@
 // Here we add these lines of code so we can use our variable
 // names directly like myLabel or myVariable.  If we dont add
 // a @synthesize line our app will still run but when we need
-// to access our properties
+// to access our properties.
 @synthesize mylabel, myTextField, nameVariable, messageVariable;
 
 - (void)viewDidLoad
@@ -32,7 +32,7 @@
 // the opening and closing Curly Brace "{ }" is executed.
 - (IBAction)changeGreeting:(id)sender {
     
-    // Triggers our "makeItSo" method to execute
+    // Triggers our "makeItSo" method to execute.
     [self makeItSo];
 }
 
@@ -40,36 +40,40 @@
 // the return key on the keyboard.
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
-    
-    // Triggers our "makeItSo" method to execute
+    // Triggers our "makeItSo" method to execute.
     [self makeItSo];
-    // --
+    // Dismiss Keyboard.
     [textField resignFirstResponder];
     return YES;
 }
 
-// --
+// Our Program Logic 
+// Controls how our variables are set and how we use them.
 -(void)makeItSo {
     
     // Sets our nameVariable equal to our textField's text input.
     nameVariable = myTextField.text;
     
-    // Checking if user entered any text in the textbox
+    // Checking if user entered any text in the textbox.
     if (nameVariable.length == 0) {
         
-        // Default Message
+        // Default Message.
         messageVariable = @"I'm Sorry Dave, I can't do that...";
         
-        // Sets myLabel "equal" to our nameVariable
+        // Sets myLabel "equal" to our nameVariable.
         mylabel.text = messageVariable;
         
-    // --
+    // If the user does enter text into the text field we build
+    // we a message with our messageVariable.
     } else {
         
         // Message Builder
+        // The message builder builds a string(stringWithFormat) with 
+        // some of our preset text and also uses a placeholder "%@"
+        // followed by our nameVariable.
         messageVariable = [NSString stringWithFormat:@"Hello %@!", nameVariable];
         
-        // Sets myLabel "equal" to our nameVariable
+        // Sets myLabel "equal" to our nameVariable.
         mylabel.text = messageVariable;
         
     }
