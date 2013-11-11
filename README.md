@@ -13,3 +13,4 @@ when user does one of the following actions:
 - Taps anywhere else in the background
 
 ==========
+<img src="https://dl.dropboxusercontent.com/u/14303/webLayout_lab01.001.jpg" alt="Lab 1 Screenshot">
