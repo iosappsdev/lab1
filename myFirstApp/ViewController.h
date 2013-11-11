@@ -2,8 +2,11 @@
 //  ViewController.h
 //  myFirstApp
 //
+//  Lab 1 | My First App
+//
 //  Created by Ricardo Ruiz on 11/3/13.
 //  Copyright (c) 2013 iOS Apps Development. All rights reserved.
+//  www.iosappsdev.org
 //
 
 #import <UIKit/UIKit.h>
